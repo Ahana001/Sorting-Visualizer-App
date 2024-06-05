@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Algorithms Visualization</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+      }
+      .array-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .array-bar {
+        width: 20px;
+        margin: 0 2px;
+        background-color: blue;
+      }
+      button {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sorting Algorithms Visualization</h1>
+    <div class="controls">
+      <button onclick="generateArray()">Generate New Array</button>
+      <button onclick="bubbleSort()">Bubble Sort</button>
+      <button onclick="insertionSort()">Insertion Sort</button>
+      <button onclick="selectionSort()">Selection Sort</button>
+    </div>
+    <div class="array-container" id="array-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
